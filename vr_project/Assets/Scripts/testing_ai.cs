@@ -7,11 +7,16 @@ using UnityEngine.AI;
 public class testing_ai : MonoBehaviour
 {
 
-    [SerializeField]private Transform goal;
+    [SerializeField] private Transform target;
     [SerializeField] private float runDistance = 10.0f;
     private NavMeshAgent agent;
     private Animator anim;
     private bool isRunning = false;
+
+    [SerializeField] LayerMask playerL, goalL;
+
+    [SerializeField] private float attackR = 2.5f;
+    private bool isAttacking = false;
 
     // Start is called before the first frame update\
     void Start()
@@ -23,24 +28,42 @@ public class testing_ai : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.destination = goal.position;
-    
-        float distanceToTarget = Vector3.Distance(transform.position, goal.position);
-
-        if (distanceToTarget <= runDistance && !isRunning)
+        float distanceToTarget = Vector3.Distance(transform.position, target.position);
+        if (distanceToTarget <= attackR && !isAttacking)
         {
-            isRunning = true;
-            agent.speed = agent.speed * 2f;
-            anim.SetBool("isRunning", true);
-        }
-        if (isRunning && agent.remainingDistance <= agent.stoppingDistance)
-        {
-            isRunning = false;
-            agent.speed = agent.speed / 2f;
-            anim.SetBool("isRunning", false);
-        }
+            agent.isStopped = true;
+            anim.SetTrigger("attack");
+            isAttacking = true;
 
-        float velocityMagnitude = agent.velocity.magnitude;
-        anim.SetBool("isWalking", velocityMagnitude > 0.1f);
+            StartCoroutine(resumeWalk());
+        }
+        else {
+            /*
+            if (distanceToTarget <= runDistance && !isRunning)
+            {
+                isRunning = true;
+                agent.speed = agent.speed * 2f;
+                anim.SetBool("isRunning", true);
+            }
+
+            if (isRunning && agent.remainingDistance <= agent.stoppingDistance)
+            {
+                isRunning = false;
+                agent.speed = agent.speed / 2f;
+                anim.SetBool("isRunning", false);
+            }
+            */
+            agent.isStopped = false;
+            float velocityMagnitude = agent.velocity.magnitude;
+            anim.SetBool("isWalking", velocityMagnitude > 0.1f);
+            agent.destination = target.position;
+
+        }
+    }
+    IEnumerator resumeWalk()
+    {
+        yield return new WaitForSeconds(2.0f);
+        isAttacking = false;
+        anim.ResetTrigger("attack");
     }
 }
