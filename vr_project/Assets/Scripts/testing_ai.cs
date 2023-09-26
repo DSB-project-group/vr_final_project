@@ -32,10 +32,8 @@ public class testing_ai : MonoBehaviour
         if (distanceToTarget <= attackR && !isAttacking)
         {
             agent.isStopped = true;
-            anim.SetTrigger("attack");
+            anim.SetBool("isAttack", true);
             isAttacking = true;
-
-            StartCoroutine(resumeWalk());
         }
         else {
             /*
@@ -53,17 +51,13 @@ public class testing_ai : MonoBehaviour
                 anim.SetBool("isRunning", false);
             }
             */
+            isAttacking = false;
             agent.isStopped = false;
+            anim.SetBool("isAttack", false);
             float velocityMagnitude = agent.velocity.magnitude;
             anim.SetBool("isWalking", velocityMagnitude > 0.1f);
             agent.destination = target.position;
 
         }
-    }
-    IEnumerator resumeWalk()
-    {
-        yield return new WaitForSeconds(2.0f);
-        isAttacking = false;
-        anim.ResetTrigger("attack");
     }
 }
