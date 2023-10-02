@@ -8,10 +8,10 @@ public class testing_ai : MonoBehaviour
 {
 
     [SerializeField] private Transform target;
-    [SerializeField] private float runDistance = 10.0f;
+    //[SerializeField] private float runDistance = 10.0f;
     private NavMeshAgent agent;
     private Animator anim;
-    private bool isRunning = false;
+    //private bool isRunning = false;
 
     [SerializeField] LayerMask playerL, goalL;
 

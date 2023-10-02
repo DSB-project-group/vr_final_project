@@ -34,6 +34,14 @@ public class walk_state : StateMachineBehaviour
             animator.SetBool("isAttack", true);
             animator.SetInteger("attackIndex", Random.Range(0,2));
         }
+
+        // if taking damage
+        /*
+        if(){
+        animator.SetBool("isGetHit", true);
+            animator.SetInteger("getHitIndex", Random.Range(0,3));
+        }
+        */
     }
 
     //OnStateExit is called when a transition ends and the state machine finishes evaluating this state

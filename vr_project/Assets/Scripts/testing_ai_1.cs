@@ -5,8 +5,6 @@ using UnityEngine.AI;
 
 public class testing_ai_1 : MonoBehaviour
 {
-    [SerializeField] float health = 3;
-
     [SerializeField] float attackCD = 3f;
     [SerializeField] float attackRange = 1f;
     [SerializeField] float aggroRange = 4f;
