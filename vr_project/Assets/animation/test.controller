@@ -116,17 +116,17 @@ AnimatorStateMachine:
     m_Position: {x: 930, y: 240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2838336001216539250}
-    m_Position: {x: 780, y: 470, z: 0}
+    m_Position: {x: 760, y: 450, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2266250912437047199}
-    m_Position: {x: 560, y: 350, z: 0}
+    m_Position: {x: 550, y: 370, z: 0}
   m_ChildStateMachines:
   - serializedVersion: 1
     m_StateMachine: {fileID: 2769562958010007337}
     m_Position: {x: 400, y: 60, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: 4456784858903670650}
-    m_Position: {x: 330, y: 460, z: 0}
+    m_Position: {x: 340, y: 470, z: 0}
   m_AnyStateTransitions: []
   m_EntryTransitions:
   - {fileID: 6063692683031430820}
@@ -140,8 +140,8 @@ AnimatorStateMachine:
     - {fileID: -8415838475636587115}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: -20, y: -10, z: 0}
-  m_EntryPosition: {x: -80, y: 460, z: 0}
-  m_ExitPosition: {x: 780, y: 660, z: 0}
+  m_EntryPosition: {x: -70, y: 400, z: 0}
+  m_ExitPosition: {x: 570, y: 590, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -5408717019547911430}
 --- !u!1101 &-3231234952581351756
@@ -336,61 +336,61 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: attackIndex
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isRunning
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isWalkingLeft
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isWalkingRight
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isAttack
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: getHitIndex
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isGetHit
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isDeath
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: monster_health
     m_Type: 1
     m_DefaultFloat: 100
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
