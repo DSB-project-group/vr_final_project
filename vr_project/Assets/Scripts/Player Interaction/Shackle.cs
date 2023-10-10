@@ -40,14 +40,21 @@ public class Shackle : MonoBehaviour
 
     public void checkTear()
     {
-        if (Vector3.Distance(hand.position, tetherPoint.position) > tearDistance)
-            TearShackle();
+        tetherDistance = Vector3.Distance(hand.position, tetherPoint.position); //Check how far is the hand from the tether
+        if (tetherDistance > tearDistance) // compare distance to tear point
+            TearShackle(); 
     }
 
     public void TearShackle()
     {
         hasTeared = true;
-        line.enabled = false;
-          
+        line.enabled = false; // disables the line component
+        //TODO: add rope break SFX and VFX
+    }
+
+    public bool getHasTeared()
+    {
+        return hasTeared;
     }
 }
+  
