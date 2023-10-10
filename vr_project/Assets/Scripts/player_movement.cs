@@ -8,6 +8,9 @@ public class player_movement : MonoBehaviour
     public float runSpeed = 10.0f;
     public float sensitivity = 2.0f;
 
+
+    public AudioSource footstep;
+
     private CharacterController controller;
     private float rotationX = 0;
 
@@ -15,6 +18,7 @@ public class player_movement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
+
     }
 
     private void Update()
@@ -32,5 +36,19 @@ public class player_movement : MonoBehaviour
         rotationX = Mathf.Clamp(rotationX, -90, 90);
         Camera.main.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
         transform.rotation *= Quaternion.Euler(0, mouseX, 0);
+
+        // Movement Sound
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            footstep.enabled = true;
+        }
+        else
+        {
+            footstep.enabled = false;
+        }
+
+
     }
+
+
 }
