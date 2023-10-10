@@ -6,15 +6,23 @@ public class idle_state : StateMachineBehaviour
 {
     Transform player;
     float chaseR = 10f;
+    float timer;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        timer = 0;
     }
 
 // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        timer += Time.deltaTime;
+        if(timer > 5)
+        {
+            animator.SetBool("isPatrolling",true);
+        }
         float dis = Vector3.Distance(player.position, animator.transform.position);
         if(dis <= chaseR)
         {
