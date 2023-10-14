@@ -5,7 +5,7 @@ using UnityEngine;
 public class idle_state : StateMachineBehaviour
 {
     Transform player;
-    float chaseR = 10f;
+    float chaseRange = 10f;
     float timer;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -24,7 +24,7 @@ public class idle_state : StateMachineBehaviour
             animator.SetBool("isPatrolling",true);
         }
         float dis = Vector3.Distance(player.position, animator.transform.position);
-        if(dis <= chaseR)
+        if(dis <= chaseRange)
         {
             animator.SetBool("isWalking", true);
         }

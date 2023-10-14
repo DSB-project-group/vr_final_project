@@ -12,6 +12,8 @@ public class patroll_state : StateMachineBehaviour
     List<Transform> PathPoints = new List<Transform>();
     NavMeshAgent agent;
     float walkSpeed = 2.4f;
+    float chaseRange = 10f;
+    Vector3 target;
     //onstateenter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateinfo, int layerindex)
     {
@@ -24,16 +26,25 @@ public class patroll_state : StateMachineBehaviour
         {
             PathPoints.Add(t);
         }
-        agent.SetDestination(PathPoints[Random.Range(0 , PathPoints.Count)].position);
+
+        target = PathPoints[Random.Range(0, PathPoints.Count)].position;
     }
 
     //onstateupdate is called on each update frame between onstateenter and onstateexit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateinfo, int layerindex)
     {
-        timer += Time.deltaTime;
-        if(timer > 8)
+        agent.SetDestination(target);
+        float pathPoint_dis = Vector3.Distance(target, animator.transform.position);
+        if(pathPoint_dis <= 0.5f)
         {
             animator.SetBool("isPatrolling", false);
+        }
+
+
+        float player_dis = Vector3.Distance(player.position, animator.transform.position);
+        if (player_dis <= chaseRange)
+        {
+            animator.SetBool("isWalking", true);
         }
     }
 
