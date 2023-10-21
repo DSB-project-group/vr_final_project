@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class testing_player : MonoBehaviour
 {
+    [SerializeField] private float health;
+
     public Camera playerCamera;
     public float walkSpeed = 3f;
     public float runSpeed = 6f;

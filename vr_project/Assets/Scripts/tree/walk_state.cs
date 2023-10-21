@@ -8,7 +8,8 @@ public class walk_state : StateMachineBehaviour
     Transform player;
     NavMeshAgent agent;
     float walkSpeed = 2.4f;
-    float attackR = 2.5f;
+    float attackRange = 2.5f;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -29,7 +30,7 @@ public class walk_state : StateMachineBehaviour
             animator.SetBool("isWalking" , false);
         }
 
-        if(dis <= attackR)
+        if(dis <= attackRange)
         {
             animator.SetBool("isAttack", true);
             animator.SetInteger("attackIndex", Random.Range(0,2));
