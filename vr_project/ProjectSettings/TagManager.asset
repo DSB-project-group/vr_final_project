@@ -6,6 +6,7 @@ TagManager:
   tags:
   - paths
   - monster
+  - key
   layers:
   - Default
   - TransparentFX
