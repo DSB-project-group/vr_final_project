@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class patroll_state : StateMachineBehaviour
 {
-    float timer;
+    //float timer;
     Transform player;
     //float chaseR = 10f;
     List<Transform> PathPoints = new List<Transform>();
@@ -17,7 +17,7 @@ public class patroll_state : StateMachineBehaviour
     //onstateenter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateinfo, int layerindex)
     {
-        timer = 0;
+        //timer = 0;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = animator.GetComponent<NavMeshAgent>();
         GameObject points = GameObject.FindGameObjectWithTag("paths");
