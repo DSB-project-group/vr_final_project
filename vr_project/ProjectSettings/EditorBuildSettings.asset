@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/levels/start_scene.unity
     guid: 42685c1d9ea878f43adecd1ed65e6813
+  - enabled: 0
+    path: Assets/Scenes/levels/basement_scene.unity
+    guid: 5e8f1297b03bd8640909064431452b0f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 27cde12a8898080488ca63fb50904625, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1ba47791799258b48a631c494bf8aa45, type: 2}
