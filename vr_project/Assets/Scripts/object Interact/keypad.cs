@@ -12,7 +12,7 @@ public class keypad : MonoBehaviour
     private List<int>enteredPassword = new List<int>();
     private List<int> correctPassword = new List<int>() { 1, 1, 0, 1 };
 
-    [SerializeField]private TextMeshPro EnteredCode;
+    [SerializeField]private TextMeshProUGUI EnteredCode;
 
 
     // Start is called before the first frame update
