@@ -800,7 +800,6 @@ AnimatorState:
   - {fileID: -1823962516622291146}
   m_StateMachineBehaviours:
   - {fileID: 2359298452900915941}
-  - {fileID: 2162506136846376344}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
