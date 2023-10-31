@@ -33,6 +33,7 @@ public class keypad : MonoBehaviour
             checkPassword();
         }
 
+        Debug.Log("keypad press");
         enteredPassword.Add(enterKey);
         DisplayEntered();
     }
