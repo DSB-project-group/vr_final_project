@@ -15,6 +15,17 @@ public class Shackle : MonoBehaviour
 
     [SerializeField] private float tearDistance = 1f;
     [SerializeField] private float tetherDistance;
+
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip ropeStretch;
+    [SerializeField] private AudioClip ropeRip;
+    private bool isPlayingStretchAudio;
+    private bool isPlayingRipAudio;
+
+
+    private float tempDistance = 0f;
+
+
     
     private bool hasTeared = false;
 
@@ -30,8 +41,18 @@ public class Shackle : MonoBehaviour
     {
         if(hasTeared)
             return;
+        
 
         checkTear();
+
+        if(audioSource.isPlaying == false)
+            isPlayingStretchAudio = false;
+
+        if(tempDistance != tetherDistance && !isPlayingStretchAudio)
+        {
+            isPlayingStretchAudio = true;
+            audioSource.PlayOneShot(ropeStretch, 0.15f);
+        }
 
         line.SetPosition(0, hand.position);
         line.SetPosition(1, tetherPoint.position);
@@ -49,6 +70,10 @@ public class Shackle : MonoBehaviour
     {
         hasTeared = true;
         line.enabled = false; // disables the line component
+        if(isPlayingStretchAudio)
+            audioSource.Stop();
+            
+        audioSource.PlayOneShot(ropeRip, 0.15f);
         //TODO: add rope break SFX and VFX
     }
 

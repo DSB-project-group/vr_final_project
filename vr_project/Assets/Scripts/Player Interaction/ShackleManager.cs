@@ -8,6 +8,8 @@ public class ShackleManager : MonoBehaviour
     [SerializeField] private Shackle shackleLeft;
     
 
+    [SerializeField] private AudioSource audioSource;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,14 @@ public class ShackleManager : MonoBehaviour
         if(shackleLeft.getHasTeared() && shackleRight.getHasTeared())
             return;
             //TODO: do stuff.
+
+            
+    }
+
+
+    public AudioSource GetAudioSource()
+    {
+        return audioSource;
     }
 
 

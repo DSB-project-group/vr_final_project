@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: e7bc4e18b0074b4478488fa8c3a81233, type: 2}
---- !u!20 &7844593 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 4888620128492418009, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
-  m_PrefabInstance: {fileID: 1989370429}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &25956403
 GameObject:
   m_ObjectHideFlags: 0
@@ -23719,7 +23714,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 7844593}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -26207,10 +26202,6 @@ PrefabInstance:
     - target: {fileID: 3087059145163237578, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
       propertyPath: m_Name
       value: XR Interaction Hands Setup
-      objectReference: {fileID: 0}
-    - target: {fileID: 4752656373539193199, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
-      propertyPath: m_MoveSpeed
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8242821557062929882, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
       propertyPath: m_LocalPosition.x
