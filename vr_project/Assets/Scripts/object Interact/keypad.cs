@@ -13,11 +13,14 @@ public class keypad : MonoBehaviour
     private List<int> correctPassword = new List<int>() { 1, 1, 0, 1 };
 
     [SerializeField]private TextMeshProUGUI EnteredCode;
+    [SerializeField] private GameObject sec_door;
+    Animator anim;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = sec_door.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -44,6 +47,7 @@ public class keypad : MonoBehaviour
         if (isEqual)
         {
             Debug.Log("password correct");
+            anim.SetBool("IsCorrectBool", true);
         }
         else
         {
