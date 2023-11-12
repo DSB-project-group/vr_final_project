@@ -5,10 +5,11 @@ using UnityEngine.AI;
 
 public class walk_state : StateMachineBehaviour
 {
-    Transform player;
-    NavMeshAgent agent;
-    float walkSpeed = 2.4f;
-    float attackRange = 2.5f;
+    private Transform player;
+    private NavMeshAgent agent;
+    private float walkSpeed = 2.4f;
+    private float attackRange = 2.5f;
+    private int monster_current_health;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -16,6 +17,7 @@ public class walk_state : StateMachineBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = animator.GetComponent<NavMeshAgent>();
         agent.speed = walkSpeed;
+        monster_current_health = animator.GetInteger("monster_health");
     }
 
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -43,6 +45,12 @@ public class walk_state : StateMachineBehaviour
             animator.SetInteger("getHitIndex", Random.Range(0,3));
         }
         */
+
+        if(monster_current_health <= 30)
+        {
+            animator.SetTrigger("IsRunning");
+            animator.SetBool("stopRunning", false);
+        }
     }
 
     //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
