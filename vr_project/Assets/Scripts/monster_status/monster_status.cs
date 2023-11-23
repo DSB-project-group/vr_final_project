@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/*
 public class monster_status : MonoBehaviour
 {
     [SerializeField] private float health = 100f;
@@ -35,5 +36,5 @@ public class monster_status : MonoBehaviour
         }
         am.SetBool("isGetHit" , false);
         */
-    }
-}
+    //}
+//}
