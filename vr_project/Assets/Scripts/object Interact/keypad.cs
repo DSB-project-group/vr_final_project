@@ -10,7 +10,7 @@ public class keypad : MonoBehaviour
 {
 
     private List<int>enteredPassword = new List<int>();
-    private List<int> correctPassword = new List<int>() { 1, 1, 9, 1 };
+    private List<int> correctPassword = new List<int>() {1, 1, 9, 1};
 
     [SerializeField]private TextMeshProUGUI EnteredText;
     [SerializeField] private GameObject sec_door;
@@ -35,8 +35,7 @@ public class keypad : MonoBehaviour
         {
             checkPassword();
         }
-
-        Debug.Log("keypad press");
+        Debug.Log("keypad press and cout:" + enteredPassword.Count);
         enteredPassword.Add(enterKey);
         DisplayEntered();
     }
@@ -46,14 +45,15 @@ public class keypad : MonoBehaviour
         bool isEqual = Enumerable.SequenceEqual(enteredPassword, correctPassword);
         if (isEqual)
         {
+            EnteredText.text = "coorect";
             Debug.Log("password correct");
             anim.SetBool("IsCorrectBool", true);
         }
         else
         {
             Debug.Log("wrong password");
-            enteredPassword.Clear();
         }
+        enteredPassword.Clear();
     }
 
     private void DisplayEntered()
@@ -62,7 +62,14 @@ public class keypad : MonoBehaviour
 
         for(int i = 0; i < enteredPassword.Count; i++)
         {
-            EnteredText.text += enteredPassword[i];
+            if (enteredPassword[i] == 0)
+            {
+                EnteredText.text += "";
+            }
+            else
+            {
+                EnteredText.text += enteredPassword[i];
+            }
         }
     }
 }
