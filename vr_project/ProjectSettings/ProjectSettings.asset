@@ -909,10 +909,17 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
+<<<<<<< Updated upstream
   cloudProjectId: d5299cd5-ecb0-46d7-8ae2-62c4f1867c40
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: vr_project 2023-11-24_19-27-21
+=======
+  cloudProjectId: 81680830-671f-4a0f-94fc-f435ff7f5c1b
+  framebufferDepthMemorylessMode: 0
+  qualitySettingsNames: []
+  projectName: vr_project 2023-11-24_19-29-31
+>>>>>>> Stashed changes
   organizationId: zz221
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
