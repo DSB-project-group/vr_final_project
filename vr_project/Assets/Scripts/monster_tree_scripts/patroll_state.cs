@@ -11,7 +11,7 @@ public class patroll_state : StateMachineBehaviour
     //float chaseR = 10f;
     List<Transform> PathPoints = new List<Transform>();
     NavMeshAgent agent;
-    float walkSpeed = 2.4f;
+    float walkSpeed = 3f;
     float chaseRange = 10f;
     Vector3 target;
     //onstateenter is called when a transition starts and the state machine starts to evaluate this state

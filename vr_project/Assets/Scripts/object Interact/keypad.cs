@@ -10,9 +10,9 @@ public class keypad : MonoBehaviour
 {
 
     private List<int>enteredPassword = new List<int>();
-    private List<int> correctPassword = new List<int>() { 1, 1, 0, 1 };
+    private List<int> correctPassword = new List<int>() { 1, 1, 9, 1 };
 
-    [SerializeField]private TextMeshProUGUI EnteredCode;
+    [SerializeField]private TextMeshProUGUI EnteredText;
     [SerializeField] private GameObject sec_door;
     Animator anim;
 
@@ -58,11 +58,11 @@ public class keypad : MonoBehaviour
 
     private void DisplayEntered()
     {
-        EnteredCode.text = null;
+        EnteredText.text = null;
 
         for(int i = 0; i < enteredPassword.Count; i++)
         {
-            EnteredCode.text += enteredPassword[i];
+            EnteredText.text += enteredPassword[i];
         }
     }
 }

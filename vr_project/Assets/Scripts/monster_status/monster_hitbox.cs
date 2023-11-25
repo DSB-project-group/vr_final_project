@@ -7,13 +7,16 @@ public class hitbox : MonoBehaviour
 {
     // Start is called before the first frame update
     BoxCollider bc;
+
+    /*
     [SerializeField]
     private Animator animator;
     [SerializeField]
     LoadScene loadScene;
     [SerializeField]
     private bool canKill = false;
-    
+    */
+
     void Start()
     {
         bc = GetComponent<BoxCollider>();
@@ -30,6 +33,7 @@ public class hitbox : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("hit the player");
+            /*
             if(animator.GetBool("isAttack"))
             {
                 if(canKill)
@@ -38,6 +42,7 @@ public class hitbox : MonoBehaviour
                     loadScene.SceneToLoad(0);
                 }
             }
+            */
         }
     }
 }

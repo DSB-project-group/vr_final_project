@@ -17,7 +17,7 @@ public class walk_state : StateMachineBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = animator.GetComponent<NavMeshAgent>();
         agent.speed = walkSpeed;
-        monster_current_health = animator.GetInteger("monster_health");
+        monster_current_health = animator.GetInteger("monsterHealth");
     }
 
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

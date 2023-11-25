@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -417,7 +417,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders: []
+  m_Colliders:
+  - {fileID: 27763507}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -26504,6 +26505,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969261293}
   m_Mesh: {fileID: 4300000, guid: 338a423d70b874743b61e6bf69184e50, type: 3}
+--- !u!1001 &1989370429
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3087059145163237578, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_Name
+      value: XR Interaction Hands Setup
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087059145163237578, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242821557062929882, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.399014
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242821557062929882, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.464438
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242821557062929882, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 52.533
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242821557062929882, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242821557062929882, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242821557062929882, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242821557062929882, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242821557062929882, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242821557062929882, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242821557062929882, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
 --- !u!114 &1989370430 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 275035830606773046, guid: 060941ab615e74916bcf41b0ee761b24, type: 3}
