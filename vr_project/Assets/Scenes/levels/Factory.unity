@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44309393, g: 0.4923008, b: 0.5720063, a: 1}
+  m_IndirectSpecularColor: {r: 0.44050038, g: 0.48911458, b: 0.5694298, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -26368,6 +26368,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.26, y: 0.76, z: 0.32}
   m_Center: {x: 0, y: -1.11, z: 0}
+--- !u!136 &849293779
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849293771}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.47
+  m_Height: 0.97
+  m_Direction: 1
+  m_Center: {x: 0, y: -1.01, z: 0.03}
 --- !u!1001 &850764670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45137,6 +45160,10 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 2816320979201259750, guid: 060941ab615e74916bcf41b0ee761b24, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3593494524069813733, guid: 060941ab615e74916bcf41b0ee761b24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.42
@@ -45192,6 +45219,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5509303231319013329, guid: 060941ab615e74916bcf41b0ee761b24, type: 3}
       insertIndex: -1
       addedObject: {fileID: 849293778}
+    - targetCorrespondingSourceObject: {fileID: 5509303231319013329, guid: 060941ab615e74916bcf41b0ee761b24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 849293779}
   m_SourcePrefab: {fileID: 100100000, guid: 060941ab615e74916bcf41b0ee761b24, type: 3}
 --- !u!1001 &1441212306
 PrefabInstance:
