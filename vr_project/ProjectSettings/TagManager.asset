@@ -9,6 +9,7 @@ TagManager:
   - key
   - Floor
   - lever
+  - hitbox
   layers:
   - Default
   - TransparentFX
