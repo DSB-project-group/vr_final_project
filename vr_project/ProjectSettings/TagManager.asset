@@ -10,6 +10,7 @@ TagManager:
   - Floor
   - lever
   - hitbox
+  - bullet
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ public class walk_state : StateMachineBehaviour
     private Transform player;
     private NavMeshAgent agent;
     private float walkSpeed = 2.4f;
-    private float attackRange = 2.5f;
+    private float attackRange = 3.2f;
     private int monster_current_health;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
