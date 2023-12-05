@@ -17,9 +17,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/levels/Factory.unity
     guid: ee5587992793671489d13ddb77efa3b8
-  - enabled: 0
-    path: Assets/Scenes/levels/Demo_1911.unity
-    guid: 51e808997b2bbed429f6b0fbe1ba465d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 27cde12a8898080488ca63fb50904625, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1ba47791799258b48a631c494bf8aa45, type: 2}
