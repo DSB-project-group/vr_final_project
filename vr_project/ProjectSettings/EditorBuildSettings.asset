@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/levels/start_scene.unity
     guid: 42685c1d9ea878f43adecd1ed65e6813
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/levels/hospital_maze.unity
     guid: 994e0c74f06e4476798219fe1b6daa30
   - enabled: 1
     path: Assets/Scenes/levels/basement_scene2.unity
     guid: 5e8f1297b03bd8640909064431452b0f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/levels/Factory.unity
     guid: ee5587992793671489d13ddb77efa3b8
   m_configObjects:
