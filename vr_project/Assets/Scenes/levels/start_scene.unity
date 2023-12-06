@@ -502,6 +502,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Interaction Hands Setup
       objectReference: {fileID: 0}
+    - target: {fileID: 3894721016400558021, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806246974045218278, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -164.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806246974045218278, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -21.00003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806246974045218278, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4572.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806246974045218278, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9958891
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806246974045218278, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806246974045218278, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.090580516
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806246974045218278, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806246974045218278, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 818.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806246974045218278, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -330.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806246974045218278, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -10.394
+      objectReference: {fileID: 0}
     - target: {fileID: 8242821557062929882, guid: 01f05414edfe5a6489f0f7002a7df594, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.526
