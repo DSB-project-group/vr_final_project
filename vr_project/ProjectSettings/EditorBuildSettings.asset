@@ -11,8 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/levels/hospital_maze.unity
     guid: 994e0c74f06e4476798219fe1b6daa30
-  - enabled: 0
-    path: Assets/Scenes/levels/basement_scene.unity
+  - enabled: 1
+    path: Assets/Scenes/levels/basement_scene2.unity
     guid: 5e8f1297b03bd8640909064431452b0f
   - enabled: 1
     path: Assets/Scenes/levels/Factory.unity
