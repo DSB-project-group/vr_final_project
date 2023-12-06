@@ -7,9 +7,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IInteractable<T>
+public interface IInteractable
 {
-    void Interact(T interactable);
+    void Interact();
     //void Interact(T interactable, int id);
 }
 

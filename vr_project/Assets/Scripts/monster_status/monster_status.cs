@@ -24,14 +24,12 @@ public class monster_status : MonoBehaviour
             am.SetInteger("getHitIndex", Random.Range(0, 2));
         }
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-
+    private void OnCollisionEnter(Collision other) {
         if(other.gameObject.CompareTag("bullet"))
         {
             am.SetBool("isGetHit", true);
             am.SetInteger("getHitIndex", Random.Range(0, 2));
         }
     }
+    
 }

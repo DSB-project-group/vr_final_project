@@ -9,6 +9,8 @@ using UnityEngine;
 
 public class Shackle : MonoBehaviour
 {
+    [SerializeField] private ShackleManager shackleManager;
+    [SerializeField] private int id;
     [SerializeField] private LineRenderer line;
     [SerializeField] private Transform hand;
     [SerializeField] private Transform tetherPoint;
@@ -43,7 +45,7 @@ public class Shackle : MonoBehaviour
             return;
         
 
-        checkTear();
+        CheckTear();
 
         if(audioSource.isPlaying == false)
             isPlayingStretchAudio = false;
@@ -59,7 +61,7 @@ public class Shackle : MonoBehaviour
         
     }
 
-    public void checkTear()
+    public void CheckTear()
     {
         tetherDistance = Vector3.Distance(hand.position, tetherPoint.position); //Check how far is the hand from the tether
         if (tetherDistance > tearDistance) // compare distance to tear point
@@ -74,12 +76,18 @@ public class Shackle : MonoBehaviour
             audioSource.Stop();
             
         audioSource.PlayOneShot(ropeRip, 0.15f);
+        shackleManager.SetBrokenShackle(id);
         //TODO: add rope break SFX and VFX
     }
 
-    public bool getHasTeared()
+    public bool GetHasTeared()
     {
         return hasTeared;
+    }
+
+    public void SetID(int val)
+    {
+        id = val; 
     }
 }
   
