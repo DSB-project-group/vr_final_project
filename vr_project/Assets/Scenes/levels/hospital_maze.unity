@@ -16815,6 +16815,14 @@ PrefabInstance:
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadNextScene
       objectReference: {fileID: 0}
+    - target: {fileID: 6672770794399574428, guid: 4dcc1515b77d74f4bb5161acd18a2891, type: 3}
+      propertyPath: m_Size.x
+      value: 0.78546715
+      objectReference: {fileID: 0}
+    - target: {fileID: 6672770794399574428, guid: 4dcc1515b77d74f4bb5161acd18a2891, type: 3}
+      propertyPath: m_Center.x
+      value: -0.107266426
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
