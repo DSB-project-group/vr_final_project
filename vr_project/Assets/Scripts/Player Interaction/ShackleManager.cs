@@ -10,7 +10,7 @@ public class ShackleManager : MonoBehaviour
 {
     [SerializeField] private Shackle[] Shackles;
 
-    [SerializeField] private bool[] IsBroken = {false, false};
+    [SerializeField] private bool[] IsBroken;
     
     [SerializeField] private AudioSource audioSource;
 
@@ -18,15 +18,13 @@ public class ShackleManager : MonoBehaviour
 
     [SerializeField] private LoadScene loadScene;
 
-
-   
-    void Start()
+    private void Start()
     {
         IsBroken = new bool[Shackles.Length];
-        for(int i = 0; i > Shackles.Length; i++)
+        for(int i = 0; i >= Shackles.Length; i++)
         {
+            IsBroken[i] = true;
             Shackles[i].SetID(i);
-            IsBroken[i] = false;
         }
         
     }
@@ -44,20 +42,20 @@ public class ShackleManager : MonoBehaviour
         IsBroken[id] = true;
         //loadScene.LoadNextScene();
     
-        CheckIfAllBroken();
+         CheckIfAllBroken();
     }
 
     private bool CheckIfAllBroken(){
-        for(int i = 0; i > IsBroken.Length; i++)
-        {
-            if(IsBroken[i] == false)
-            {
-                Debug.Log($"Shackle at {i} is broken: {IsBroken[i]}");
-                return false;
-            }
-                
+
+        
+        if(IsBroken[0] == false || IsBroken[1] == false)
+        {     
+            return false;
         }
         
+
+        Debug.Log("Interacting");
+        Interact();
         return true;
     }
 
