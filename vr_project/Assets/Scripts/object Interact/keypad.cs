@@ -12,6 +12,9 @@ public class keypad : MonoBehaviour
     private List<int>enteredPassword = new List<int>();
     private List<int> correctPassword = new List<int>() {1, 1, 9, 1};
 
+    [SerializeField] private GameObject path_1;
+    [SerializeField] private GameObject path_2;
+
     [SerializeField]private TextMeshProUGUI EnteredText;
     [SerializeField] private GameObject sec_door;
     Animator anim;
@@ -48,6 +51,8 @@ public class keypad : MonoBehaviour
             EnteredText.text = "coorect";
             Debug.Log("password correct");
             anim.SetBool("IsCorrectBool", true);
+            path_1.SetActive(false);
+            path_2.SetActive(true);
         }
         else
         {
