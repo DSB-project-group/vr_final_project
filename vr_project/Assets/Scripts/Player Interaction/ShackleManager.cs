@@ -28,15 +28,6 @@ public class ShackleManager : MonoBehaviour
         }
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-            
-    }
-
-
     public void SetBrokenShackle(int id)
     {
         IsBroken[id] = true;

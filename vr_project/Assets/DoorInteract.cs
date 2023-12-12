@@ -15,10 +15,6 @@ public class DoorInteract : MonoBehaviour, IInteractable
     [SerializeField] private AudioClip doorOpenSFX;
     [SerializeField] private AudioClip doorCloseSFX;
     private bool IsOpen = false;
-    
-
-
-
 
     public void Interact()
     {
@@ -29,17 +25,5 @@ public class DoorInteract : MonoBehaviour, IInteractable
             audioSource.PlayOneShot(doorOpenSFX, 0.25f);
         else
             audioSource.PlayOneShot(doorCloseSFX, 0.25f);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
