@@ -24,5 +24,5 @@ In "Escape from Backrooms," you will be relentlessly pursued by a savage monster
 Developed using the Unity game engine, our project leverages the platform's robust capabilities to deliver a seamless gaming experience. 
 
 ## Video Playthough
-[!(https://img.youtube.com/vi/VsrYAp6QZVg/0.jpg)](https://www.youtube.com/watch?v=VsrYAp6QZVg)
+[(https://img.youtube.com/vi/VsrYAp6QZVg/0.jpg)](https://www.youtube.com/watch?v=VsrYAp6QZVg)
 
